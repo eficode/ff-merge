@@ -20,7 +20,7 @@ Pull request head ref.
 ```
 - name: resolve pr refs
   id: refs
-  uses: eficode/ff-merge@main
+  uses: eficode/resolve-pr-refs@main
   with:
     token: ${{ secrets.GITHUB_TOKEN }}
 ```
