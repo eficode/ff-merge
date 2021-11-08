@@ -1,4 +1,5 @@
 name: 'Resolve pull request refs'
+author: 'Eficode'
 description: 'outputs base_ref and head_ref for a PR comment (issue_comment event)'
 inputs:
   token:
