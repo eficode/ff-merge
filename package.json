@@ -1,5 +1,5 @@
 {
-  "name": "ff-merge",
+  "name": "resolve-pr-refs",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,10 +9,12 @@
     "@octokit/core": "^3.5.1"
   },
   "devDependencies": {
-    "@vercel/ncc": "^0.31.1"
+    "@vercel/ncc": "^0.31.1",
+    "standard-version": "^9.3.2"
   },
   "scripts": {
     "build": "./node_modules/.bin/ncc build index.js --license licenses.txt",
+    "release": "./node_modules/.bin/standard-version && git push --follow-tags",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,7 +25,7 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/eficode/ff-merge/issues"
+    "url": "https://github.com/eficode/resolve-pr-refs/issues"
   },
-  "homepage": "https://github.com/eficode/ff-merge#readme"
+  "homepage": "https://github.com/eficode/resolve-pr-refs#readme"
 }
